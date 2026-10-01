@@ -1,0 +1,19 @@
+.venv/
+.DS_Store
+__pycache__/
+*.zip
+*.pages
+ML_4041334044_report.pdf
+data(is pasted here)/
+# duplicate of data/train and data/val
+data/LOLv1/
+# keep only final-epoch checkpoints, skip the intermediate ones
+runs/**/ckpt_epoch_*.pt
+!runs/glare_lite_e20/ckpt_epoch_20.pt
+!runs/glare_lite_e20_s320/ckpt_epoch_20.pt
+!runs/glare_lite_e20_s320_colorLoss/ckpt_epoch_20.pt
+!runs/glare_lite_e30_s320_colorLoss_satLoss/ckpt_epoch_30.pt
+# internal/scratch runs
+runs/glare_lite/
+runs/glare_lite_forOstad/
+runs/glare_lite_forOstad2/
